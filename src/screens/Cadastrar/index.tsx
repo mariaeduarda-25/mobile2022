@@ -2,8 +2,8 @@ import React from "react";
 import {
   View,
   Text,
-  KeyboardAvoidingView,
   TextInput,
+  KeyboardAvoidingView,
   ImageBackground,
 } from "react-native";
 import { MaterialIcons, Entypo, Ionicons } from "@expo/vector-icons";
@@ -35,7 +35,7 @@ export default function Cadastrar({ navigation }: LoginTypes) {
             <MaterialIcons name="email" style={styles.icon} />
             <TextInput
               style={styles.input}
-              placeholder="Email"
+              placeholder="E-mail"
               keyboardType="email-address"
               autoCapitalize="none"
             />

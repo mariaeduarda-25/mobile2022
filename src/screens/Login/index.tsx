@@ -2,8 +2,8 @@ import React from "react";
 import {
   View,
   Text,
-  KeyboardAvoidingView,
   TextInput,
+  KeyboardAvoidingView,
   ImageBackground,
 } from "react-native";
 import { MaterialIcons, Entypo } from "@expo/vector-icons";
@@ -13,7 +13,7 @@ import { LoginTypes } from "../../types/Screen.types";
 
 export default function Login({ navigation }: LoginTypes) {
   async function handleSignIn() {
-    console.log("Login");
+    navigation.navigate("Tab");
   }
   function handleCadastrar() {
     navigation.navigate("Cadastrar");
@@ -31,7 +31,7 @@ export default function Login({ navigation }: LoginTypes) {
             <MaterialIcons name="email" style={styles.icon} />
             <TextInput
               style={styles.input}
-              placeholder="Email"
+              placeholder="E-mail"
               keyboardType="email-address"
               autoCapitalize="none"
             />
