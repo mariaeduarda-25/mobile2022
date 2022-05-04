@@ -13,13 +13,20 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     margin: 10,
     alignItems: "center",
-    width: "80%",
+    width: "100%",
     height: 45
   },
   icon: {
     fontSize: 24,
     padding: 5
+  },
+  input: {
+    width: "50%"
+  },
+  list: {
+    marginBottom: 20
   }
 });
 
 export default styles
+
